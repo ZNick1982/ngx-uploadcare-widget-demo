@@ -60,10 +60,10 @@ export class AppComponent implements OnInit {
   ];
   closeInTwoSec = false;
 
-  @ViewChild(UcWidgetComponent)
+  @ViewChild(UcWidgetComponent, {static: false})
   private widgetComponent: UcWidgetComponent;
 
-  @ViewChild(UcWidgetCustomComponent)
+  @ViewChild(UcWidgetCustomComponent, {static: false})
   private widgetCustomComponent: UcWidgetCustomComponent;
 
   ngOnInit() {
